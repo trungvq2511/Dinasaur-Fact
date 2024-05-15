@@ -60,7 +60,7 @@ Dino.prototype.compareDiet = function (dino) {
     if (dino.diet === human.diet) {
         dino.fact = `${dino.species} have ${dino.diet} diet like ${human.species}!`
     } else {
-        dino.fact = `${dino.species} have ${dino.diet} diet but ${human.species} have ${human.diet} diet!`
+        dino.fact = `${dino.species} have ${dino.diet} diet but ${human.species} has ${human.diet} diet!`
     }
 }
 
@@ -70,7 +70,6 @@ function generateTiles(dataArr) {
 
     // Add Human to dataArr at index 4
     dataArr.splice(4, 0, human);
-    // console.log('dinoArr', dataArr)
     dataArr.forEach(data => {
 
         if (data instanceof Dino) {
