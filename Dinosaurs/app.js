@@ -9,9 +9,6 @@ function Dino(species, weight, height, diet, where, when, fact) {
     this.fact = fact;
 }
 
-// Create Dino Objects
-const dino = new Dino();
-
 function Human(name, height, weight, diet) {
     this.species = name;
     this.height = height
